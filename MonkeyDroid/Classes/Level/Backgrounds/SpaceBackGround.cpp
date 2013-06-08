@@ -26,7 +26,10 @@ void SpaceBackGround::InitBG(cocos2d::CCNode *layer)
     
         
     CCSize s = CCDirector::sharedDirector()->getWinSize();
-    
+    //////////////
+    //Adding some comments to test out a git pull request
+    //
+    //
     bool nasaObjsLoaded = ScreenHelper::AddOBBSpriteToCache("spaceBG.png","spaceBG.plist");
     
     float scale = ScreenHelper::getTextureScale();
