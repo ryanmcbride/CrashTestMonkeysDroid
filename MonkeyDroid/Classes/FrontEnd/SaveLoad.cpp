@@ -51,7 +51,7 @@ void SaveLoad::Load()
         m_SaveData.currency = 0;
         m_SaveData.commercialIndex = 5;
         m_SaveData.currentLevel = 1;
-        //m_SaveData.trampLockLevel = 2;
+        m_SaveData.trampLockLevel = 1;
         //m_SaveData.turboLockLevel = 2;
         m_SaveData.characters[0] |= UNLOCKED;
         m_SaveData.characters[0] |= SELECTED;

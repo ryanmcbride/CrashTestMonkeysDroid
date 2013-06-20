@@ -107,7 +107,31 @@ HUD::HUD()
         label = CCLabelTTF::create("Move Forward to Start", "impact.ttf", 35*scale);
         m_startPrompt->addChild(label, 2);
         label->setColor(ccc3(237,188,0));
-        label->setPosition(ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_CENTER,0.0f,40.0f));        
+        label->setPosition(ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_CENTER,0.0f,40.0f));
+        
+        
+        if(currentLevel==8 && !(SaveLoad::m_SaveData.levelflags[currentLevel] & SaveLoad::HINT_DISPLAY))
+        {
+            CCTextureCache::sharedTextureCache()->addPVRImage("Hints.pvr.ccz");
+            CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("Hints.plist");
+            CCSprite *hintsprite = CCSprite::createWithSpriteFrameName("Hints_EarnMedals_Tiki.png");
+            hintsprite->setPosition(ScreenHelper::getAnchorPoint(ScreenHelper::ANCHOR_CENTER));
+            hintsprite->setScale(2.0f);
+            addChild(hintsprite,10);
+            hintsprite->runAction(CCSequence::create(CCDelayTime::create(5.0f),CCCallFuncN::create(hintsprite, callfuncN_selector(CCNode::removeFromParentAndCleanup)),NULL));
+            //SaveLoad::m_SaveData.levelflags[currentLevel] |= SaveLoad::HINT_DISPLAY;
+        }
+        if(currentLevel==16 && !(SaveLoad::m_SaveData.levelflags[currentLevel] & SaveLoad::HINT_DISPLAY))
+        {
+            CCTextureCache::sharedTextureCache()->addPVRImage("Hints.pvr.ccz");
+            CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("Hints.plist");
+            CCSprite *hintsprite = CCSprite::createWithSpriteFrameName("Hints_EarnMedals_City.png");
+            hintsprite->setPosition(ScreenHelper::getAnchorPoint(ScreenHelper::ANCHOR_CENTER));
+            hintsprite->setScale(2.0f);
+            addChild(hintsprite,10);
+            hintsprite->runAction(CCSequence::create(CCDelayTime::create(5.0f),CCCallFuncN::create(hintsprite, callfuncN_selector(CCNode::removeFromParentAndCleanup)),NULL));
+            //SaveLoad::m_SaveData.levelflags[currentLevel] |= SaveLoad::HINT_DISPLAY;
+        }
     }
     
     

@@ -315,13 +315,16 @@ const char* LevelSelect::getLevelXMLName()
             level = "Bonus";
             break;
     }
-    sprintf(s_LevelName,"%s%d.xml",level,(s_LevelID%8)+1);
+    if(s_LevelID<=7)
+        sprintf(s_LevelName,"Tutorial7.xml");
+    else
+        sprintf(s_LevelName,"%s%d.xml",level,(s_LevelID%8)+1);
     return s_LevelName;
 }
 
 void LevelSelect::setNextLevel()
 {
-    if(s_LevelID >= 5 && s_LevelID <= 7)
+    if(s_LevelID <= 7)
         s_LevelID = 8;
     else
         s_LevelID++;

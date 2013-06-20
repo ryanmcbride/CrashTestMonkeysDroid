@@ -43,26 +43,26 @@ void TikiBackGround::InitBG(cocos2d::CCNode *layer)
         sprintf(name,"ctm_Island_%02d.png",(RandomInt(1, 21)));
         sprite = CCSprite::createWithSpriteFrameName(name);
         sprite->setScale(scale);
-        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 64.0f, 100.0f));
+        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 64.0f, 80.0f));
         m_Scale9[0] = sprite;
         
         sprintf(name,"ctm_Island_%02d.png",(RandomInt(1, 21)));
         sprite = CCSprite::createWithSpriteFrameName(name);
         sprite->setScale(scale);
-        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 380.0f, 100.0f));
+        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 380.0f, 80.0f));
         m_Scale9[1] = sprite;
         
         
         sprintf(name,"ctm_Island_%02d.png",(RandomInt(1, 21)));
         sprite = CCSprite::createWithSpriteFrameName(name);
         sprite->setScale(scale);
-        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 680.0f, 100.0f));
+        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 680.0f, 80.0f));
         m_Scale9[2] = sprite;
         
         sprintf(name,"ctm_Island_%02d.png",(RandomInt(1, 21)));
         sprite = CCSprite::createWithSpriteFrameName(name);
         sprite->setScale(scale);
-        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 980.0f, 100.0f));
+        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 980.0f, 80.0f));
         m_Scale9[3] = sprite;
         
         numScale9 = 4;
@@ -71,12 +71,12 @@ void TikiBackGround::InitBG(cocos2d::CCNode *layer)
     {
         sprite = CCSprite::createWithSpriteFrameName("ctm_Island_01.png");
         sprite->setScale(scale);
-        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 64.0f, 100.0f));
+        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 64.0f, 80.0f));
         m_Scale9[0] = sprite;
         
         sprite = CCSprite::createWithSpriteFrameName("ctm_Island_02.png");
         sprite->setScale(scale);
-        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 380.0f, 100.0f));
+        pNode->addChild(sprite,0,CCPointMake(0.95f,0.0f),ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 380.0f, 80.0f));
         m_Scale9[1] = sprite;
         
         numScale9 = 2;
@@ -141,18 +141,27 @@ void TikiBackGround::InitBG(cocos2d::CCNode *layer)
             sprintf(name,"ctm_Tiki_torch_0%d.png",(RandomInt(1, 10)));
             sprite = CCSprite::createWithSpriteFrameName(name);
             sprite->setScale(scale);
-            m_Parallax3Points[i] = ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 256.0f*i, 113.0f);
+            m_Parallax3Points[i] = ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 256.0f*i, 93.0f);
             pNode->addChild(sprite,2,CCPointMake(0.90f,0.0f),m_Parallax3Points[i]);
             m_Parallax3->addObject(sprite);
+            CCParticleSystem *fire = CCParticleSystemQuad::create("TorchFire6.plist");
+            //fire->setScale(10.0f);
+            fire->setPosition(ccp(sprite->getContentSize().width/2.0f+2.5f,sprite->getContentSize().height));
+            fire->setPositionType(kCCPositionTypeRelative);
+            sprite->addChild(fire);
 
             
             //palm
+            
             sprintf(name,"ctm_palm_0%d.png",(RandomInt(1, 7)));
             sprite = CCSprite::createWithSpriteFrameName(name);
             sprite->setScale(scale);
             m_Parallax4Points[i] = ScreenHelper::getAnchorPointPlusOffset(ScreenHelper::ANCHOR_BOTTOM_LEFT, 256.0f*i+64.0f, 133.0f);
             pNode->addChild(sprite,0,CCPointMake(0.90f,0.0f),m_Parallax4Points[i]);
-            m_Parallax4->addObject(sprite);
+            if(RandomInt(0, 100)>80)
+                m_Parallax4->addObject(CCNode::create());
+            else
+                m_Parallax4->addObject(sprite);
         }
         
     }
@@ -167,10 +176,10 @@ void TikiBackGround::InitBG(cocos2d::CCNode *layer)
     {
         sprite = CCSprite::create("ctm_island_FG_01.png");
         sprite->setScaleX(scaleX);
-        sprite->setScaleY(scale);
+        sprite->setScaleY(scaleY * 0.5f);
         m_TrackPoints[i] = ScreenHelper::getAnchorPoint(ScreenHelper::ANCHOR_BOTTOM_LEFT);
         m_TrackPoints[i].x += (256.0f*i)*scaleX;
-        m_TrackPoints[i].y += -30.0f*scale;
+        m_TrackPoints[i].y += -28.0f*scale;
         sprite->setPosition(m_TrackPoints[i]);
         m_layer->addChild(sprite,4);
         m_Track->addObject(sprite);

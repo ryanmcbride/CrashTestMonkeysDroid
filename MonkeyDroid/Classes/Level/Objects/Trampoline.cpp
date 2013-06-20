@@ -24,7 +24,9 @@ static int s_trampImageNumber = 1050505;
 
 void createTrampVFX(CCNode *ccLayer, float x,float y, const char *name)
 {
-    
+    CCParticleSystemQuad *emitter = CCParticleSystemQuad::create(name);
+    ccLayer->addChild(emitter);
+    emitter->setPosition(ccp(x*ScreenHelper::getCameraZoom(),y*ScreenHelper::getCameraZoom()));
 }
 
 Trampoline::Trampoline(b2World *world, CCNode *ccLayer, b2Vec2 *startPos, float scale, int forceVersion):

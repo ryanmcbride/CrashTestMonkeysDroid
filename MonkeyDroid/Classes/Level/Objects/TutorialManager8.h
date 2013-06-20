@@ -22,6 +22,7 @@ public:
 	virtual void DestroySelf();
     virtual void Update(float xpos,float ypos);
 protected:
+    bool JumpInRange(float xpos);
     b2World *m_world;
     cocos2d::CCNode *m_backLayer;
     cocos2d::CCNode *m_frontLayer;
@@ -31,5 +32,6 @@ protected:
     bool m_bStateDone;
     Track *m_Track;
     cocos2d::CCSprite *buttonGlow;
+    cocos2d::CCNode *m_Jump;
 };
 #endif

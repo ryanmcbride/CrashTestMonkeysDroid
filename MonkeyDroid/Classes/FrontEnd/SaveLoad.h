@@ -69,6 +69,7 @@ public:
         ONE_COCONUT = 0x00000004,
         TWO_COCONUT = 0x00000008,
         THREE_COCONUT = 0x00000010,
+        HINT_DISPLAY = 0x00000020,
         MAX_INT =  0xffffffff,
     };
     enum objective_flags

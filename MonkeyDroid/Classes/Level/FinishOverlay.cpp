@@ -59,7 +59,9 @@ void FinishOverlay::ScreenInit(float time, int peanuts, int points)
     this->Store(5.3f);
     m_EarningMedal = this->Medal(8.0f);
     this->Score(5.0f);
-    
+    if(!m_EarningMedal)
+        this->ShowBigHint(8.0f);
+
     
     int currentLevel = LevelSelect::getCurrentLevel();
     if(currentLevel==TUTORIAL_LEVELSTART+5)
@@ -67,6 +69,68 @@ void FinishOverlay::ScreenInit(float time, int peanuts, int points)
     else
         SaveLoad::m_SaveData.levelflags[currentLevel+1] |= SaveLoad::UNLOCKED;
     SaveLoad::Save();
+}
+void FinishOverlay::ShowBigHint(float startTime)
+{
+    int currentLevel = LevelSelect::getCurrentLevel();
+    
+    bool do_hint = false;
+    int hintnum = 0;
+    if(SaveLoad::m_SaveData.trickLockLevel == 0 && SaveLoad::m_SaveData.currency >= 300)
+    {
+        do_hint = true;
+        hintnum = 3;
+    }
+    else if(SaveLoad::m_SaveData.turboLockLevel == 0 && SaveLoad::m_SaveData.currency >= 250)
+    {
+        do_hint = true;
+        hintnum = 4;
+    }
+    else if(SaveLoad::m_SaveData.flipLockLevel == 0 && SaveLoad::m_SaveData.currency >= 350)
+    {
+        do_hint = true;
+        hintnum = 1;
+    }
+    else if(SaveLoad::m_SaveData.timeLockLevel == 0 && SaveLoad::m_SaveData.currency >= 250)
+    {
+        do_hint = true;
+        hintnum = 2;
+    }
+    if(do_hint)
+    {
+        if(!(SaveLoad::m_SaveData.levelflags[currentLevel] & SaveLoad::HINT_DISPLAY))
+        {
+            CCTextureCache::sharedTextureCache()->addPVRImage("Hints.pvr.ccz");
+            CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("Hints.plist");
+            CCSprite *hintsprite = NULL;
+            switch(hintnum)
+            {
+                case 0:
+                    hintsprite = CCSprite::createWithSpriteFrameName("Hints_UPGRADE_Armadillo.png");
+                    break;
+                case 1:
+                    hintsprite = CCSprite::createWithSpriteFrameName("Hints_UPGRADE_Flips.png");
+                    break;
+                case 2:
+                    hintsprite = CCSprite::createWithSpriteFrameName("Hints_UPGRADE_TimePickups.png");
+                    break;
+                case 3:
+                    hintsprite = CCSprite::createWithSpriteFrameName("Hints_UPGRADE_Tricks.png");
+                    break;
+                case 4:
+                    hintsprite = CCSprite::createWithSpriteFrameName("Hints_UPGRADE_TurboStrips.png");
+                    break;
+            }
+            
+            hintsprite->setPosition(ScreenHelper::getAnchorPoint(ScreenHelper::ANCHOR_CENTER));
+            hintsprite->setScale(2.0f);
+            addChild(hintsprite,10);
+            hintsprite->setOpacity(0);
+            hintsprite->runAction(CCSequence::create(CCDelayTime::create(startTime),CCFadeIn::create(0.5f),CCDelayTime::create(5.0f),NULL));
+            
+            //SaveLoad::m_SaveData.levelflags[currentLevel] |= SaveLoad::HINT_DISPLAY;
+        }
+    }
 }
 void FinishOverlay::ChimpHead(float startTime)
 {

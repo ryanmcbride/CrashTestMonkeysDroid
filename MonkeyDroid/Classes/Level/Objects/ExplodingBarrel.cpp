@@ -17,6 +17,15 @@
 
 using namespace cocos2d;
 
+
+void createBarrelExplosion(CCNode *ccLayer, float x,float y)
+{
+    CCParticleSystemQuad *emitter = CCParticleSystemQuad::create("ctm_BarrelExplosion.plist");
+    emitter->setPosition(ccp(x*ScreenHelper::getCameraZoom(),y*ScreenHelper::getCameraZoom()));
+    ccLayer->addChild(emitter);
+}
+
+
 ExplodingBarrel::ExplodingBarrel(b2World *world, CCNode *ccLayer, b2Vec2 *startPos, float scale):
 TrackObject(startPos->x, 10.0f)
 {
@@ -131,8 +140,8 @@ bool ExplodingBarrel::HandleBeginContact(b2Fixture *fixtureA,b2Fixture *fixtureB
             }
             
         }
-        //Rider::g_OnFire = 5.0f;
-		//createBarrelExplosion([m_ccLayer parent],m_StartPos.x*PTM_RATIO,m_StartPos.y*PTM_RATIO);
+        Rider::g_OnFire = 5.0f;
+		createBarrelExplosion(m_ccLayer->getParent(),m_StartPos.x*PTM_RATIO,m_StartPos.y*PTM_RATIO);
 		//createExplosion([m_ccLayer parent],m_StartPos.x*PTM_RATIO,m_StartPos.y*PTM_RATIO);
 		
 		TextureObject* texObject = (TextureObject*)m_MainCollision->GetUserData();

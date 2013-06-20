@@ -555,6 +555,51 @@
 		C399D4D3170B30F500BE133B /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399D4D1170B30F500BE133B /* Platform.cpp */; };
 		C399D4D8170B393B00BE133B /* FinishLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399D4D4170B393500BE133B /* FinishLine.cpp */; };
 		C399D4D9170B393B00BE133B /* SpawnPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C399D4D6170B393700BE133B /* SpawnPoint.cpp */; };
+		C39FDD0A1766D3FD0056CCE5 /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD071766D3FD0056CCE5 /* particleTexture.png */; };
+		C39FDD0B1766D3FD0056CCE5 /* TorchFire5.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD081766D3FD0056CCE5 /* TorchFire5.plist */; };
+		C39FDD0C1766D3FD0056CCE5 /* TorchFire6.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD091766D3FD0056CCE5 /* TorchFire6.plist */; };
+		C39FDD361766D6AF0056CCE5 /* Armadillo_Blue.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD0E1766D6AE0056CCE5 /* Armadillo_Blue.plist */; };
+		C39FDD371766D6AF0056CCE5 /* Armadillo_Purple.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD0F1766D6AE0056CCE5 /* Armadillo_Purple.plist */; };
+		C39FDD381766D6AF0056CCE5 /* Armadillo_Red.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD101766D6AE0056CCE5 /* Armadillo_Red.plist */; };
+		C39FDD391766D6AF0056CCE5 /* ctm_BarrelExplosion_overlay.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD111766D6AE0056CCE5 /* ctm_BarrelExplosion_overlay.plist */; };
+		C39FDD3A1766D6AF0056CCE5 /* ctm_BarrelExplosion.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD121766D6AE0056CCE5 /* ctm_BarrelExplosion.plist */; };
+		C39FDD3B1766D6AF0056CCE5 /* ctm_Dust_Impact_01.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD131766D6AE0056CCE5 /* ctm_Dust_Impact_01.plist */; };
+		C39FDD3C1766D6AF0056CCE5 /* ctm_Dust_Impact_06.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD141766D6AE0056CCE5 /* ctm_Dust_Impact_06.plist */; };
+		C39FDD3D1766D6AF0056CCE5 /* ctm_Dust_Kick_02.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD151766D6AE0056CCE5 /* ctm_Dust_Kick_02.plist */; };
+		C39FDD3E1766D6AF0056CCE5 /* ctm_Dust_StartFX2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD161766D6AE0056CCE5 /* ctm_Dust_StartFX2.plist */; };
+		C39FDD3F1766D6AF0056CCE5 /* ctm_Dust_StartFX5.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD171766D6AE0056CCE5 /* ctm_Dust_StartFX5.plist */; };
+		C39FDD401766D6AF0056CCE5 /* ctm_Fireworks_01.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD181766D6AE0056CCE5 /* ctm_Fireworks_01.plist */; };
+		C39FDD411766D6AF0056CCE5 /* ctm_Fireworks_02.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD191766D6AE0056CCE5 /* ctm_Fireworks_02.plist */; };
+		C39FDD421766D6AF0056CCE5 /* ctm_Fireworks_03.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD1A1766D6AE0056CCE5 /* ctm_Fireworks_03.plist */; };
+		C39FDD431766D6AF0056CCE5 /* ctm_Fireworks_04.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD1B1766D6AE0056CCE5 /* ctm_Fireworks_04.plist */; };
+		C39FDD441766D6AF0056CCE5 /* ctm_Fireworks_05.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD1C1766D6AE0056CCE5 /* ctm_Fireworks_05.plist */; };
+		C39FDD451766D6AF0056CCE5 /* ctm_Fireworks_06.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD1D1766D6AE0056CCE5 /* ctm_Fireworks_06.plist */; };
+		C39FDD461766D6AF0056CCE5 /* ctm_Fireworks_07.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD1E1766D6AE0056CCE5 /* ctm_Fireworks_07.plist */; };
+		C39FDD471766D6AF0056CCE5 /* ctm_FlamingMonkey_02.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD1F1766D6AE0056CCE5 /* ctm_FlamingMonkey_02.plist */; };
+		C39FDD481766D6AF0056CCE5 /* ctm_Sparks_04.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD201766D6AE0056CCE5 /* ctm_Sparks_04.plist */; };
+		C39FDD491766D6AF0056CCE5 /* ctm_TikiTorch_Flame.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD211766D6AE0056CCE5 /* ctm_TikiTorch_Flame.plist */; };
+		C39FDD4A1766D6AF0056CCE5 /* ctm_VFX_Armadillo_Blue.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD221766D6AE0056CCE5 /* ctm_VFX_Armadillo_Blue.plist */; };
+		C39FDD4B1766D6AF0056CCE5 /* ctm_VFX_Armadillo_Orange.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD231766D6AE0056CCE5 /* ctm_VFX_Armadillo_Orange.plist */; };
+		C39FDD4C1766D6AF0056CCE5 /* ctm_VFX_Armadillo_Purple.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD241766D6AE0056CCE5 /* ctm_VFX_Armadillo_Purple.plist */; };
+		C39FDD4D1766D6AF0056CCE5 /* ctm_VFX_Invincibility_01.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD251766D6AE0056CCE5 /* ctm_VFX_Invincibility_01.plist */; };
+		C39FDD4E1766D6AF0056CCE5 /* ctm_VFX_Invincibility_04.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD261766D6AE0056CCE5 /* ctm_VFX_Invincibility_04.plist */; };
+		C39FDD4F1766D6AF0056CCE5 /* Firework1.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD271766D6AE0056CCE5 /* Firework1.plist */; };
+		C39FDD501766D6AF0056CCE5 /* Firework2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD281766D6AE0056CCE5 /* Firework2.plist */; };
+		C39FDD511766D6AF0056CCE5 /* Firework3.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD291766D6AE0056CCE5 /* Firework3.plist */; };
+		C39FDD521766D6AF0056CCE5 /* Firework4.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD2A1766D6AF0056CCE5 /* Firework4.plist */; };
+		C39FDD531766D6AF0056CCE5 /* Firework5.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD2B1766D6AF0056CCE5 /* Firework5.plist */; };
+		C39FDD541766D6AF0056CCE5 /* Firework6.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD2C1766D6AF0056CCE5 /* Firework6.plist */; };
+		C39FDD551766D6AF0056CCE5 /* Firework7.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD2D1766D6AF0056CCE5 /* Firework7.plist */; };
+		C39FDD561766D6AF0056CCE5 /* Firework8.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD2E1766D6AF0056CCE5 /* Firework8.plist */; };
+		C39FDD571766D6AF0056CCE5 /* GrayBubbleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD2F1766D6AF0056CCE5 /* GrayBubbleTexture.png */; };
+		C39FDD581766D6AF0056CCE5 /* monkeyFireTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD301766D6AF0056CCE5 /* monkeyFireTest.plist */; };
+		C39FDD591766D6AF0056CCE5 /* ParticleStar.png in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD311766D6AF0056CCE5 /* ParticleStar.png */; };
+		C39FDD5A1766D6AF0056CCE5 /* peanut.png in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD321766D6AF0056CCE5 /* peanut.png */; };
+		C39FDD5B1766D6AF0056CCE5 /* StartSmokeTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD331766D6AF0056CCE5 /* StartSmokeTest.plist */; };
+		C39FDD5C1766D6AF0056CCE5 /* SwingPeanutImpact.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD341766D6AF0056CCE5 /* SwingPeanutImpact.plist */; };
+		C39FDD5D1766D6AF0056CCE5 /* TankBubbles.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD351766D6AF0056CCE5 /* TankBubbles.plist */; };
+		C39FDD601771399D0056CCE5 /* Hints.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD5E1771399D0056CCE5 /* Hints.plist */; };
+		C39FDD611771399D0056CCE5 /* Hints.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = C39FDD5F1771399D0056CCE5 /* Hints.pvr.ccz */; };
 		C3A2BF6C17146CD400899CC8 /* McAcme1-6.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A2BF6217146CD300899CC8 /* McAcme1-6.plist */; };
 		C3A2BF6D17146CD400899CC8 /* McAcme1-6.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = C3A2BF6317146CD400899CC8 /* McAcme1-6.pvr.ccz */; };
 		C3A2BF6E17146CD400899CC8 /* McAcme7-12.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A2BF6417146CD400899CC8 /* McAcme7-12.plist */; };
@@ -1712,6 +1757,51 @@
 		C399D4D5170B393600BE133B /* FinishLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FinishLine.h; path = Objects/FinishLine.h; sourceTree = "<group>"; };
 		C399D4D6170B393700BE133B /* SpawnPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpawnPoint.cpp; path = Objects/SpawnPoint.cpp; sourceTree = "<group>"; };
 		C399D4D7170B393900BE133B /* SpawnPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpawnPoint.h; path = Objects/SpawnPoint.h; sourceTree = "<group>"; };
+		C39FDD071766D3FD0056CCE5 /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = particleTexture.png; path = Resources/particleTexture.png; sourceTree = "<group>"; };
+		C39FDD081766D3FD0056CCE5 /* TorchFire5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TorchFire5.plist; path = Resources/TorchFire5.plist; sourceTree = "<group>"; };
+		C39FDD091766D3FD0056CCE5 /* TorchFire6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TorchFire6.plist; path = Resources/TorchFire6.plist; sourceTree = "<group>"; };
+		C39FDD0E1766D6AE0056CCE5 /* Armadillo_Blue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Armadillo_Blue.plist; path = Resources/Armadillo_Blue.plist; sourceTree = "<group>"; };
+		C39FDD0F1766D6AE0056CCE5 /* Armadillo_Purple.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Armadillo_Purple.plist; path = Resources/Armadillo_Purple.plist; sourceTree = "<group>"; };
+		C39FDD101766D6AE0056CCE5 /* Armadillo_Red.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Armadillo_Red.plist; path = Resources/Armadillo_Red.plist; sourceTree = "<group>"; };
+		C39FDD111766D6AE0056CCE5 /* ctm_BarrelExplosion_overlay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_BarrelExplosion_overlay.plist; path = Resources/ctm_BarrelExplosion_overlay.plist; sourceTree = "<group>"; };
+		C39FDD121766D6AE0056CCE5 /* ctm_BarrelExplosion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_BarrelExplosion.plist; path = Resources/ctm_BarrelExplosion.plist; sourceTree = "<group>"; };
+		C39FDD131766D6AE0056CCE5 /* ctm_Dust_Impact_01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Dust_Impact_01.plist; path = Resources/ctm_Dust_Impact_01.plist; sourceTree = "<group>"; };
+		C39FDD141766D6AE0056CCE5 /* ctm_Dust_Impact_06.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Dust_Impact_06.plist; path = Resources/ctm_Dust_Impact_06.plist; sourceTree = "<group>"; };
+		C39FDD151766D6AE0056CCE5 /* ctm_Dust_Kick_02.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Dust_Kick_02.plist; path = Resources/ctm_Dust_Kick_02.plist; sourceTree = "<group>"; };
+		C39FDD161766D6AE0056CCE5 /* ctm_Dust_StartFX2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Dust_StartFX2.plist; path = Resources/ctm_Dust_StartFX2.plist; sourceTree = "<group>"; };
+		C39FDD171766D6AE0056CCE5 /* ctm_Dust_StartFX5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Dust_StartFX5.plist; path = Resources/ctm_Dust_StartFX5.plist; sourceTree = "<group>"; };
+		C39FDD181766D6AE0056CCE5 /* ctm_Fireworks_01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Fireworks_01.plist; path = Resources/ctm_Fireworks_01.plist; sourceTree = "<group>"; };
+		C39FDD191766D6AE0056CCE5 /* ctm_Fireworks_02.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Fireworks_02.plist; path = Resources/ctm_Fireworks_02.plist; sourceTree = "<group>"; };
+		C39FDD1A1766D6AE0056CCE5 /* ctm_Fireworks_03.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Fireworks_03.plist; path = Resources/ctm_Fireworks_03.plist; sourceTree = "<group>"; };
+		C39FDD1B1766D6AE0056CCE5 /* ctm_Fireworks_04.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Fireworks_04.plist; path = Resources/ctm_Fireworks_04.plist; sourceTree = "<group>"; };
+		C39FDD1C1766D6AE0056CCE5 /* ctm_Fireworks_05.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Fireworks_05.plist; path = Resources/ctm_Fireworks_05.plist; sourceTree = "<group>"; };
+		C39FDD1D1766D6AE0056CCE5 /* ctm_Fireworks_06.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Fireworks_06.plist; path = Resources/ctm_Fireworks_06.plist; sourceTree = "<group>"; };
+		C39FDD1E1766D6AE0056CCE5 /* ctm_Fireworks_07.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Fireworks_07.plist; path = Resources/ctm_Fireworks_07.plist; sourceTree = "<group>"; };
+		C39FDD1F1766D6AE0056CCE5 /* ctm_FlamingMonkey_02.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_FlamingMonkey_02.plist; path = Resources/ctm_FlamingMonkey_02.plist; sourceTree = "<group>"; };
+		C39FDD201766D6AE0056CCE5 /* ctm_Sparks_04.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_Sparks_04.plist; path = Resources/ctm_Sparks_04.plist; sourceTree = "<group>"; };
+		C39FDD211766D6AE0056CCE5 /* ctm_TikiTorch_Flame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_TikiTorch_Flame.plist; path = Resources/ctm_TikiTorch_Flame.plist; sourceTree = "<group>"; };
+		C39FDD221766D6AE0056CCE5 /* ctm_VFX_Armadillo_Blue.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_VFX_Armadillo_Blue.plist; path = Resources/ctm_VFX_Armadillo_Blue.plist; sourceTree = "<group>"; };
+		C39FDD231766D6AE0056CCE5 /* ctm_VFX_Armadillo_Orange.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_VFX_Armadillo_Orange.plist; path = Resources/ctm_VFX_Armadillo_Orange.plist; sourceTree = "<group>"; };
+		C39FDD241766D6AE0056CCE5 /* ctm_VFX_Armadillo_Purple.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_VFX_Armadillo_Purple.plist; path = Resources/ctm_VFX_Armadillo_Purple.plist; sourceTree = "<group>"; };
+		C39FDD251766D6AE0056CCE5 /* ctm_VFX_Invincibility_01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_VFX_Invincibility_01.plist; path = Resources/ctm_VFX_Invincibility_01.plist; sourceTree = "<group>"; };
+		C39FDD261766D6AE0056CCE5 /* ctm_VFX_Invincibility_04.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ctm_VFX_Invincibility_04.plist; path = Resources/ctm_VFX_Invincibility_04.plist; sourceTree = "<group>"; };
+		C39FDD271766D6AE0056CCE5 /* Firework1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework1.plist; path = Resources/Firework1.plist; sourceTree = "<group>"; };
+		C39FDD281766D6AE0056CCE5 /* Firework2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework2.plist; path = Resources/Firework2.plist; sourceTree = "<group>"; };
+		C39FDD291766D6AE0056CCE5 /* Firework3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework3.plist; path = Resources/Firework3.plist; sourceTree = "<group>"; };
+		C39FDD2A1766D6AF0056CCE5 /* Firework4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework4.plist; path = Resources/Firework4.plist; sourceTree = "<group>"; };
+		C39FDD2B1766D6AF0056CCE5 /* Firework5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework5.plist; path = Resources/Firework5.plist; sourceTree = "<group>"; };
+		C39FDD2C1766D6AF0056CCE5 /* Firework6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework6.plist; path = Resources/Firework6.plist; sourceTree = "<group>"; };
+		C39FDD2D1766D6AF0056CCE5 /* Firework7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework7.plist; path = Resources/Firework7.plist; sourceTree = "<group>"; };
+		C39FDD2E1766D6AF0056CCE5 /* Firework8.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Firework8.plist; path = Resources/Firework8.plist; sourceTree = "<group>"; };
+		C39FDD2F1766D6AF0056CCE5 /* GrayBubbleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrayBubbleTexture.png; path = Resources/GrayBubbleTexture.png; sourceTree = "<group>"; };
+		C39FDD301766D6AF0056CCE5 /* monkeyFireTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = monkeyFireTest.plist; path = Resources/monkeyFireTest.plist; sourceTree = "<group>"; };
+		C39FDD311766D6AF0056CCE5 /* ParticleStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ParticleStar.png; path = Resources/ParticleStar.png; sourceTree = "<group>"; };
+		C39FDD321766D6AF0056CCE5 /* peanut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peanut.png; path = Resources/peanut.png; sourceTree = "<group>"; };
+		C39FDD331766D6AF0056CCE5 /* StartSmokeTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StartSmokeTest.plist; path = Resources/StartSmokeTest.plist; sourceTree = "<group>"; };
+		C39FDD341766D6AF0056CCE5 /* SwingPeanutImpact.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = SwingPeanutImpact.plist; path = Resources/SwingPeanutImpact.plist; sourceTree = "<group>"; };
+		C39FDD351766D6AF0056CCE5 /* TankBubbles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TankBubbles.plist; path = Resources/TankBubbles.plist; sourceTree = "<group>"; };
+		C39FDD5E1771399D0056CCE5 /* Hints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Hints.plist; path = Resources/Hints.plist; sourceTree = "<group>"; };
+		C39FDD5F1771399D0056CCE5 /* Hints.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hints.pvr.ccz; path = Resources/Hints.pvr.ccz; sourceTree = "<group>"; };
 		C3A2BF6217146CD300899CC8 /* McAcme1-6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "McAcme1-6.plist"; path = "Resources/McAcme1-6.plist"; sourceTree = "<group>"; };
 		C3A2BF6317146CD400899CC8 /* McAcme1-6.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = "McAcme1-6.pvr.ccz"; path = "Resources/McAcme1-6.pvr.ccz"; sourceTree = "<group>"; };
 		C3A2BF6417146CD400899CC8 /* McAcme7-12.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "McAcme7-12.plist"; path = "Resources/McAcme7-12.plist"; sourceTree = "<group>"; };
@@ -2042,6 +2132,7 @@
 		C319E73516F8F9B9000E5E55 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C39FDD0D1766D6610056CCE5 /* particles */,
 				C337465E1753FE9C00456038 /* main.1.com.LudicrousGames.MonkeyDroid.zip */,
 				C337465A1750624600456038 /* lineImage.png */,
 				C3A2BF6117146CAF00899CC8 /* Commercials */,
@@ -3410,6 +3501,8 @@
 		C399D0731701F3BD00BE133B /* HUD */ = {
 			isa = PBXGroup;
 			children = (
+				C39FDD5E1771399D0056CCE5 /* Hints.plist */,
+				C39FDD5F1771399D0056CCE5 /* Hints.pvr.ccz */,
 				C399D0871701FC4300BE133B /* Pause_Menu.png */,
 				C399D0741701F3D000BE133B /* ctm_UI_Backward_Btn_ver1_down.png */,
 				C399D0751701F3D000BE133B /* ctm_UI_Backward_Btn_ver1.png */,
@@ -3769,6 +3862,56 @@
 				C399D4CF170A3B4E00BE133B /* Space6.xml */,
 			);
 			name = XML;
+			sourceTree = "<group>";
+		};
+		C39FDD0D1766D6610056CCE5 /* particles */ = {
+			isa = PBXGroup;
+			children = (
+				C39FDD0E1766D6AE0056CCE5 /* Armadillo_Blue.plist */,
+				C39FDD0F1766D6AE0056CCE5 /* Armadillo_Purple.plist */,
+				C39FDD101766D6AE0056CCE5 /* Armadillo_Red.plist */,
+				C39FDD111766D6AE0056CCE5 /* ctm_BarrelExplosion_overlay.plist */,
+				C39FDD121766D6AE0056CCE5 /* ctm_BarrelExplosion.plist */,
+				C39FDD131766D6AE0056CCE5 /* ctm_Dust_Impact_01.plist */,
+				C39FDD141766D6AE0056CCE5 /* ctm_Dust_Impact_06.plist */,
+				C39FDD151766D6AE0056CCE5 /* ctm_Dust_Kick_02.plist */,
+				C39FDD161766D6AE0056CCE5 /* ctm_Dust_StartFX2.plist */,
+				C39FDD171766D6AE0056CCE5 /* ctm_Dust_StartFX5.plist */,
+				C39FDD181766D6AE0056CCE5 /* ctm_Fireworks_01.plist */,
+				C39FDD191766D6AE0056CCE5 /* ctm_Fireworks_02.plist */,
+				C39FDD1A1766D6AE0056CCE5 /* ctm_Fireworks_03.plist */,
+				C39FDD1B1766D6AE0056CCE5 /* ctm_Fireworks_04.plist */,
+				C39FDD1C1766D6AE0056CCE5 /* ctm_Fireworks_05.plist */,
+				C39FDD1D1766D6AE0056CCE5 /* ctm_Fireworks_06.plist */,
+				C39FDD1E1766D6AE0056CCE5 /* ctm_Fireworks_07.plist */,
+				C39FDD1F1766D6AE0056CCE5 /* ctm_FlamingMonkey_02.plist */,
+				C39FDD201766D6AE0056CCE5 /* ctm_Sparks_04.plist */,
+				C39FDD211766D6AE0056CCE5 /* ctm_TikiTorch_Flame.plist */,
+				C39FDD221766D6AE0056CCE5 /* ctm_VFX_Armadillo_Blue.plist */,
+				C39FDD231766D6AE0056CCE5 /* ctm_VFX_Armadillo_Orange.plist */,
+				C39FDD241766D6AE0056CCE5 /* ctm_VFX_Armadillo_Purple.plist */,
+				C39FDD251766D6AE0056CCE5 /* ctm_VFX_Invincibility_01.plist */,
+				C39FDD261766D6AE0056CCE5 /* ctm_VFX_Invincibility_04.plist */,
+				C39FDD271766D6AE0056CCE5 /* Firework1.plist */,
+				C39FDD281766D6AE0056CCE5 /* Firework2.plist */,
+				C39FDD291766D6AE0056CCE5 /* Firework3.plist */,
+				C39FDD2A1766D6AF0056CCE5 /* Firework4.plist */,
+				C39FDD2B1766D6AF0056CCE5 /* Firework5.plist */,
+				C39FDD2C1766D6AF0056CCE5 /* Firework6.plist */,
+				C39FDD2D1766D6AF0056CCE5 /* Firework7.plist */,
+				C39FDD2E1766D6AF0056CCE5 /* Firework8.plist */,
+				C39FDD2F1766D6AF0056CCE5 /* GrayBubbleTexture.png */,
+				C39FDD301766D6AF0056CCE5 /* monkeyFireTest.plist */,
+				C39FDD311766D6AF0056CCE5 /* ParticleStar.png */,
+				C39FDD321766D6AF0056CCE5 /* peanut.png */,
+				C39FDD331766D6AF0056CCE5 /* StartSmokeTest.plist */,
+				C39FDD341766D6AF0056CCE5 /* SwingPeanutImpact.plist */,
+				C39FDD351766D6AF0056CCE5 /* TankBubbles.plist */,
+				C39FDD071766D3FD0056CCE5 /* particleTexture.png */,
+				C39FDD081766D3FD0056CCE5 /* TorchFire5.plist */,
+				C39FDD091766D3FD0056CCE5 /* TorchFire6.plist */,
+			);
+			name = particles;
 			sourceTree = "<group>";
 		};
 		C3A2BF6117146CAF00899CC8 /* Commercials */ = {
@@ -4332,6 +4475,51 @@
 				C33746641756D51A00456038 /* cityBallon.plist in Resources */,
 				C33746651756D51A00456038 /* CityBG02.plist in Resources */,
 				C3CE152B175EF6D90051DED3 /* spaceBG.plist in Resources */,
+				C39FDD0A1766D3FD0056CCE5 /* particleTexture.png in Resources */,
+				C39FDD0B1766D3FD0056CCE5 /* TorchFire5.plist in Resources */,
+				C39FDD0C1766D3FD0056CCE5 /* TorchFire6.plist in Resources */,
+				C39FDD361766D6AF0056CCE5 /* Armadillo_Blue.plist in Resources */,
+				C39FDD371766D6AF0056CCE5 /* Armadillo_Purple.plist in Resources */,
+				C39FDD381766D6AF0056CCE5 /* Armadillo_Red.plist in Resources */,
+				C39FDD391766D6AF0056CCE5 /* ctm_BarrelExplosion_overlay.plist in Resources */,
+				C39FDD3A1766D6AF0056CCE5 /* ctm_BarrelExplosion.plist in Resources */,
+				C39FDD3B1766D6AF0056CCE5 /* ctm_Dust_Impact_01.plist in Resources */,
+				C39FDD3C1766D6AF0056CCE5 /* ctm_Dust_Impact_06.plist in Resources */,
+				C39FDD3D1766D6AF0056CCE5 /* ctm_Dust_Kick_02.plist in Resources */,
+				C39FDD3E1766D6AF0056CCE5 /* ctm_Dust_StartFX2.plist in Resources */,
+				C39FDD3F1766D6AF0056CCE5 /* ctm_Dust_StartFX5.plist in Resources */,
+				C39FDD401766D6AF0056CCE5 /* ctm_Fireworks_01.plist in Resources */,
+				C39FDD411766D6AF0056CCE5 /* ctm_Fireworks_02.plist in Resources */,
+				C39FDD421766D6AF0056CCE5 /* ctm_Fireworks_03.plist in Resources */,
+				C39FDD431766D6AF0056CCE5 /* ctm_Fireworks_04.plist in Resources */,
+				C39FDD441766D6AF0056CCE5 /* ctm_Fireworks_05.plist in Resources */,
+				C39FDD451766D6AF0056CCE5 /* ctm_Fireworks_06.plist in Resources */,
+				C39FDD461766D6AF0056CCE5 /* ctm_Fireworks_07.plist in Resources */,
+				C39FDD471766D6AF0056CCE5 /* ctm_FlamingMonkey_02.plist in Resources */,
+				C39FDD481766D6AF0056CCE5 /* ctm_Sparks_04.plist in Resources */,
+				C39FDD491766D6AF0056CCE5 /* ctm_TikiTorch_Flame.plist in Resources */,
+				C39FDD4A1766D6AF0056CCE5 /* ctm_VFX_Armadillo_Blue.plist in Resources */,
+				C39FDD4B1766D6AF0056CCE5 /* ctm_VFX_Armadillo_Orange.plist in Resources */,
+				C39FDD4C1766D6AF0056CCE5 /* ctm_VFX_Armadillo_Purple.plist in Resources */,
+				C39FDD4D1766D6AF0056CCE5 /* ctm_VFX_Invincibility_01.plist in Resources */,
+				C39FDD4E1766D6AF0056CCE5 /* ctm_VFX_Invincibility_04.plist in Resources */,
+				C39FDD4F1766D6AF0056CCE5 /* Firework1.plist in Resources */,
+				C39FDD501766D6AF0056CCE5 /* Firework2.plist in Resources */,
+				C39FDD511766D6AF0056CCE5 /* Firework3.plist in Resources */,
+				C39FDD521766D6AF0056CCE5 /* Firework4.plist in Resources */,
+				C39FDD531766D6AF0056CCE5 /* Firework5.plist in Resources */,
+				C39FDD541766D6AF0056CCE5 /* Firework6.plist in Resources */,
+				C39FDD551766D6AF0056CCE5 /* Firework7.plist in Resources */,
+				C39FDD561766D6AF0056CCE5 /* Firework8.plist in Resources */,
+				C39FDD571766D6AF0056CCE5 /* GrayBubbleTexture.png in Resources */,
+				C39FDD581766D6AF0056CCE5 /* monkeyFireTest.plist in Resources */,
+				C39FDD591766D6AF0056CCE5 /* ParticleStar.png in Resources */,
+				C39FDD5A1766D6AF0056CCE5 /* peanut.png in Resources */,
+				C39FDD5B1766D6AF0056CCE5 /* StartSmokeTest.plist in Resources */,
+				C39FDD5C1766D6AF0056CCE5 /* SwingPeanutImpact.plist in Resources */,
+				C39FDD5D1766D6AF0056CCE5 /* TankBubbles.plist in Resources */,
+				C39FDD601771399D0056CCE5 /* Hints.plist in Resources */,
+				C39FDD611771399D0056CCE5 /* Hints.pvr.ccz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

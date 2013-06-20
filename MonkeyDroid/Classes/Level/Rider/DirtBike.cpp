@@ -20,6 +20,13 @@ extern bool g_is60;
 extern bool g_bIsRetina;
 extern bool g_PermanentFire;
 
+void createDustVFX(CCNode *ccLayer, float x,float y)
+{
+    CCParticleSystemQuad *emitter = CCParticleSystemQuad::create("ctm_Dust_Kick_02.plist");
+    emitter->setPosition(ccp(x*ScreenHelper::getCameraZoom(),y*ScreenHelper::getCameraZoom()));
+    ccLayer->addChild(emitter);
+}
+
 class GroundTestCallback : public b2RayCastCallback 
 {
 public:
@@ -924,7 +931,7 @@ void DirtBike::BeginContact(b2Contact* contact)
         if(m_bDustOnLanding)
         {
             m_bDustOnLanding = false;
-//            createDustVFX(m_CCLayer,m_FrontWheel->GetBody()->GetPosition().x*PTM_RATIO,(m_FrontWheel->GetBody()->GetPosition().y-0.8f)*PTM_RATIO);
+            createDustVFX(m_CCLayer,m_FrontWheel->GetBody()->GetPosition().x*PTM_RATIO,(m_FrontWheel->GetBody()->GetPosition().y-0.8f)*PTM_RATIO);
             AudioManager::PlayEffect(AUDIO_BIKE_LAND);
         }
 		return;
@@ -937,7 +944,7 @@ void DirtBike::BeginContact(b2Contact* contact)
         if(m_bDustOnLanding)
         {
             m_bDustOnLanding = false;
-//            createDustVFX(m_CCLayer,m_BackWheel->GetBody()->GetPosition().x*PTM_RATIO,(m_BackWheel->GetBody()->GetPosition().y-0.8f)*PTM_RATIO);
+            createDustVFX(m_CCLayer,m_BackWheel->GetBody()->GetPosition().x*PTM_RATIO,(m_BackWheel->GetBody()->GetPosition().y-0.8f)*PTM_RATIO);
             AudioManager::PlayEffect(AUDIO_BIKE_LAND);
         }
 		return;

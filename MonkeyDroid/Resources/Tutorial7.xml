@@ -9,138 +9,168 @@
         <class>TutorialManager</class>
         <positionx>5.000</positionx>
         <positiony>0</positiony>
-        <version>7</version>
+        <version>8</version>
+    </Object>
+	<Object>
+        <class>Trigger</class>
+        <positionx>150.000</positionx>
+        <positiony>0</positiony>
+        <triggerID>1</triggerID>
+        <offtrigger>2</offtrigger>
+    </Object>
+	<Object>
+        <class>Trigger</class>
+        <positionx>50.000</positionx>
+        <positiony>0</positiony>
+        <trigger>1</trigger>
+        <triggerID>2</triggerID>
+    </Object>
+	<Object>
+        <class>HighWall</class>
+        <positionx>20.000</positionx>
+        <positiony>0</positiony>
+        <trigger>1</trigger>
+        <sort>1</sort>
+    </Object>
+    
+    <Object>
+        <class>RampFWD</class>
+        <positionx>100.000</positionx>
+        <positiony>0</positiony>
+        <offtrigger>2</offtrigger>
     </Object>
     <Object>
-        <class>Trampoline</class>
+        <class>Bridge</class>
+        <positionx>118.000</positionx>
+        <positiony>4</positiony>
+        <offtrigger>2</offtrigger>
+    </Object>
+    <Object>
+        <class>RampREV</class>
+        <positionx>136.400</positionx>
+        <positiony>0</positiony>
+        <offtrigger>2</offtrigger>
+    </Object>
+    
+    
+	<Object>
+        <class>PoliceFront</class>
+        <positionx>25.000</positionx>
+        <positiony>0</positiony>
+        <trigger>1</trigger>
+    </Object>
+	<Object>
+        <class>BlueCarBack</class>
+        <positionx>166.000</positionx>
+        <positiony>0</positiony>
+        <offtrigger>2</offtrigger>
+        <sort>1</sort>
+    </Object>
+	<Object>
+        <class>HighWall</class>
+        <positionx>170.000</positionx>
+        <positiony>0</positiony>
+        <offtrigger>2</offtrigger>
+    </Object>
+    
+    
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>59.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>61.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>63.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>65.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>67.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>69.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>71.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    <Object>
+        <class>PeanutPickup</class>
+        <positionx>73.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+    </Object>
+    
+    <Object>
+        <class>Trigger</class>
+        <positionx>77.000</positionx>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
+        <triggerID>3</triggerID>
+    </Object>
+
+
+    <Object>
+        <class>PoliceFront</class>
         <positionx>90.000</positionx>
         <positiony>0</positiony>
-        <version>1</version>
+        <trigger>2</trigger>
     </Object>
 	<Object>
-        <class>PeanutPickup</class>
-        <positionx>105.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>107.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>109.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>111.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>113.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>115.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>117.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>119.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>121.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>123.000</positionx>
-        <positiony>12</positiony>
-    </Object>
-	<Object>
-        <class>PlatformLong</class>
+        <class>BlueCarBack</class>
         <positionx>110.000</positionx>
-        <positiony>12</positiony>
+        <positiony>0</positiony>
+        <trigger>2</trigger>
     </Object>
-	<Object>
-        <class>PlatformLong</class>
-        <positionx>125.000</positionx>
-        <positiony>12</positiony>
+    
+    <Object>
+        <class>Trampoline</class>
+        <positionx>150.000</positionx>
+        <positiony>0</positiony>
+        <version>1</version>
+        <trigger>2</trigger>
     </Object>
-	<Object>
+    <Object>
         <class>Trampoline</class>
         <positionx>190.000</positionx>
         <positiony>0</positiony>
         <version>1</version>
+        <trigger>2</trigger>
     </Object>
-	<Object>
+    <Object>
         <class>Trampoline</class>
-        <positionx>300.000</positionx>
+        <positionx>230.000</positionx>
         <positiony>0</positiony>
         <version>1</version>
+        <trigger>2</trigger>
     </Object>
-	<Object>
-        <class>Trampoline</class>
-        <positionx>425.000</positionx>
-        <positiony>0</positiony>
-        <version>1</version>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>425.000</positionx>
-        <positiony>5</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>425.000</positionx>
-        <positiony>7</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>425.000</positionx>
-        <positiony>9</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>425.000</positionx>
-        <positiony>11</positiony>
-    </Object>
-	<Object>
-        <class>PeanutPickup</class>
-        <positionx>425.000</positionx>
-        <positiony>13</positiony>
-    </Object>
-    <Object>
-        <class>RampFWD</class>
-        <positionx>545.000</positionx>
-        <positiony>0</positiony>
-        <unbreakable>1</unbreakable>
-    </Object>
-    <Object>
-        <class>OrangeCarBack</class>
-        <positionx>550.000</positionx>
-        <positiony>0</positiony>
-        <unbreakable>1</unbreakable>
-    </Object>
-    <Object>
-        <class>MailTruckFront</class>
-        <positionx>620.000</positionx>
-        <positiony>0</positiony>
-        <unbreakable>1</unbreakable>
-    </Object>
+
+    
 	<Object>
         <class>FinishLine</class>
-        <positionx>670.000</positionx>
+        <positionx>290.000</positionx>
         <positiony>0</positiony>
     </Object>
 </root>

@@ -34,6 +34,7 @@ public:
     virtual void ChimpHead(float startTime);
     virtual void Score(float startTime);
     virtual bool Medal(float startTime);
+    void ShowBigHint(float startTime);
     
     void PlaySound1(CCNode * node);
     void PlaySound2(CCNode * node);

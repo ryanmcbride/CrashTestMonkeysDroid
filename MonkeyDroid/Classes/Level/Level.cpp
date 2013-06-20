@@ -325,5 +325,7 @@ CCScene* Level::scene()
         level->m_DebugDraw->release();
     level->m_HUD->release();
     
+    CCTextureCache::sharedTextureCache()->addImageAsync("ctm_WinScreen.pvr.ccz",NULL,NULL);
+    CCTextureCache::sharedTextureCache()->addImageAsync("particleTexture.png",NULL,NULL);
     return scene;
 }

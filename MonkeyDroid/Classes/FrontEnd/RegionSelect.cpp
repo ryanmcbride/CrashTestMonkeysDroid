@@ -105,6 +105,12 @@ RegionSelect::RegionSelect()
     }
     screenMenu->addChild(CityButton);
     
+    CCMenuItem *BonusButton = CCMenuItemSprite::create(CCSprite::createWithSpriteFrameName("IMG_0501.PNG"), CCSprite::createWithSpriteFrameName("IMG_0501.PNG"), this, menu_selector(RegionSelect::BonusButtonTapped));
+    BonusButton->setScale(scale*0.8f);
+    BonusButton->setPosition(ccp(0.0f,0.0f));
+    addName(BonusButton,"Bonus");
+    screenMenu->addChild(BonusButton);
+    
     CCMenuItem *NightButton = CCMenuItemSprite::create(CCSprite::createWithSpriteFrameName("IMG_0505.PNG"), CCSprite::createWithSpriteFrameName("IMG_0505.PNG"), this, menu_selector(RegionSelect::NightButtonTapped));
     NightButton->setScale(scale*0.8f);
     NightButton->setPosition(ccp(0.0f,0.0f));
@@ -131,12 +137,6 @@ RegionSelect::RegionSelect()
     TwentyTwelveButton->setScale(scale);
     TwentyTwelveButton->setPosition(ccp(0.0f,0.0f));
     screenMenu->addChild(TwentyTwelveButton);
-    
-    CCMenuItem *BonusButton = CCMenuItemSprite::create(CCSprite::createWithSpriteFrameName("IMG_0501.PNG"), CCSprite::createWithSpriteFrameName("IMG_0501.PNG"), this, menu_selector(RegionSelect::BonusButtonTapped));
-    BonusButton->setScale(scale*0.8f);
-    BonusButton->setPosition(ccp(0.0f,0.0f));
-    addName(BonusButton,"Bonus");
-    screenMenu->addChild(BonusButton);
     
     CCMenuItem *ComingSoonButton = CCMenuItemSprite::create(CCSprite::createWithSpriteFrameName("IMG_0501.PNG"), CCSprite::createWithSpriteFrameName("IMG_0501.PNG"), this, menu_selector(RegionSelect::ComingSoonButtonTapped));
     ComingSoonButton->setScale(scale*0.8f);

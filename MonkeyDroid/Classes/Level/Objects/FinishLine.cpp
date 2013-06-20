@@ -42,6 +42,19 @@ void FinishLine::Update(float xpos,float ypos)
         if(m_FireWorksDelay > 0.0f && (m_FireWorksDelay-deltaTime <= 0.0f) && m_FireWorks > 0)
         {
             //createFireWorks([m_ccLayer parent],m_StartPos.x*PTM_RATIO,m_StartPos.y*PTM_RATIO);
+            
+            
+            int particleNum = RandomInt(1,9);
+            CCParticleSystem *emitter;
+            char particleStr[64];
+            
+            sprintf(particleStr,"Firework%d.plist",particleNum);
+            
+            emitter = CCParticleSystemQuad::create(particleStr);
+            
+            emitter->setPosition(ccp((m_StartPos.x*PTM_RATIO+RandomInt(-100,100))*ScreenHelper::getCameraZoom(),(m_StartPos.y*PTM_RATIO+100+RandomInt(-50,150))*ScreenHelper::getCameraZoom()));  // setting emitter position
+            m_ccLayer->getParent()->addChild(emitter,10); // adding the emitter
+            
             m_FireWorks--;
             m_FireWorksDelay = RandomFloat(3.0f/30.0f,10.0f/30.0f);
         }

@@ -135,7 +135,7 @@ BackGround::~BackGround()
 
 void BackGround::Step(float xpos, float ypos)
 {
-    float scale = ScreenHelper::getTextureScale();
+    float scaleY = ScreenHelper::getTextureScaleY();
     float scaleX = ScreenHelper::getTextureScaleX();
     float zoom  = ScreenHelper::getCameraZoom();
     pNode->setPosition(CCPointMake(xpos,ypos));
@@ -144,7 +144,8 @@ void BackGround::Step(float xpos, float ypos)
     for ( int ii = 0  ; ii < m_Track->count() ; ii++ )
     {
         CCSprite * trackPiece = (CCSprite *)(m_Track->objectAtIndex(ii));
-        trackPiece->setScale(scaleX*zoom);
+        trackPiece->setScaleX(scaleX*zoom);
+        trackPiece->setScaleY(scaleY*zoom);
         CCPoint newPoint;
         newPoint.x = m_TrackPoints[ii].x*zoom;
         newPoint.y = m_TrackPoints[ii].y*zoom;

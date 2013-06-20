@@ -97,7 +97,7 @@ void CityBackGround::InitBG(cocos2d::CCNode *layer)
         sprite->setScaleY(scale);
         m_TrackPoints[i] = ScreenHelper::getAnchorPoint(ScreenHelper::ANCHOR_BOTTOM_LEFT);
         m_TrackPoints[i].x += (256.0f*i)*scaleX;
-        m_TrackPoints[i].y += -30.0f*scale;
+        m_TrackPoints[i].y += -28.0f*scale;
         sprite->setPosition(m_TrackPoints[i]);
         m_layer->addChild(sprite,4);
         m_Track->addObject(sprite);
